@@ -15,7 +15,9 @@ public:
     void addVertex();
 
     void addEdge(int source, int destination);
+    T& operator[](unsigned int vertex);
 
+    std::vector<int> shortest_path(int source, int destination);
 };
 
 #include "Graph.cpp"
