@@ -1,0 +1,19 @@
+g.addVertex(0);
+g.addVertex(1);
+g.addVertex(2);
+g.addVertex(3);
+
+g.addEdge(0, 1, 1);
+g.addEdge(1, 2, 2);
+g.addEdge(0, 2, 4);
+g.addEdge(2, 3, 1);
+
+Test1 
+Path from 0 -> 3
+output: distance: 4
+path: 0 1 2 3
+
+Test2
+added vertex 4
+Path from 0 -> 4
+no path (as expected)
